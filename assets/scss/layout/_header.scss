@@ -1,4 +1,21 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+//header
+h1{
+  width: 5 * $spacing;
+}
+.menu{
+  li{
+      @include mobile{
+          width: 50%;
+          text-align: center;
+          border: 1px solid $light;
+      }
+  }
+  a{
+      @include mobile{
+          padding: 12px 0;
+      }
+  }
+  a:hover{
+      color: $info;
+  }
 }

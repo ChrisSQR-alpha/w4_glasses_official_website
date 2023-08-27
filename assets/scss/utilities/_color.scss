@@ -1,0 +1,54 @@
+//background
+.bg-primary{
+    background-color: $primary;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.bg-light{
+    background-color: $light;
+}
+.bg-dark{
+    background-color: $dark;
+}
+.bg-info{
+    background-color: $info;
+}
+.bg-warning{
+    background-color: $warning;
+}
+.bg-danger{
+    background-color: $danger;
+}
+.bg-emphasize{
+    background: $emphasize;
+}
+.bg-gray-100{
+    background: $gray-100;
+}
+
+//text color
+.text-primary{
+    color: $primary;
+}
+.text-success{
+    color: $success;
+}
+.text-info{
+    color: $info;
+}
+.text-light{
+    color: $light;
+}
+.text-dark{
+    color: $dark;
+}
+.text-gray-500{
+    color: $gray-500;
+}
+.text-gray-600{
+    color: $gray-600;
+}
+.text-gray-700{
+    color: $gray-700;
+}

@@ -1,0 +1,62 @@
+// 排在reset 後面
+// 全域設定都寫在這邊
+
+// border box
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+// 讓圖片推滿外容器
+// 清除圖片原始設定造成的奇怪 下方 px
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+// 文字標籤樣式共通性
+body{
+    line-height: 1.5;
+}
+h2{
+    font-size: 4 * $font-size-default;
+}
+h3{
+    font-size: 3 * $font-size-default;
+}
+h4{
+    font-size: 2 * $font-size-default;
+}
+h5{
+    font-size: 1.5 * $font-size-default;
+}
+p{
+    font-size: $font-size-default;
+}
+
+//全域預設字型
+//遇到英文再各別下英文字型的class
+body{
+    font-family: $font-zh;
+}
+
+
+form{
+    max-width: 636px;
+    margin: 0 auto;
+}
+form p,
+form label,
+form input,
+form textarea,
+form button,
+::placeholder{
+  font-size: 16px;
+  line-height: 1.5;
+}
+label{
+  cursor: pointer;
+  display: block;
+}

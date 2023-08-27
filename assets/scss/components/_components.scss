@@ -1,0 +1,167 @@
+// button
+
+.btn{
+    padding: 6px 12px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: $light;
+    color: $info;
+}
+
+.btn-lg{
+    display: block;
+    width: 65.41%;
+    margin: 0 auto;
+    border: none;
+    padding: 16px 0;
+    @include pad{
+        width: 58.33%;
+    }
+}
+.btn-lg:hover{
+    cursor: pointer;
+    background-color: $light;
+    color: $info;
+}
+
+.btn-primary{
+    background: $primary;
+    color: $light;
+}
+
+
+// comment-card
+
+
+
+// pagination
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page-last-next{
+    padding: 11px 12px;
+    font-size: 19px;
+    @include mobile{
+        padding: 12px 12px;
+        font-size: 16px;
+    }
+}
+.page-num{
+    padding: 12px 16px;
+    font-size: 18px;
+    @include mobile{
+        font-size: 16px;
+    }
+}
+.page-border{
+    border: 1px solid $gray-600;
+}
+.page a:hover{
+    color: $light;
+    background: $dark;
+}
+
+
+
+// form
+.form-textblock,
+.form-textarea{
+    width: 100%;
+    border: 1px solid #000000;
+    background: #fbf2f2;
+    padding-left: 12px;
+    padding-right: 12px;
+    resize: none;
+    overflow-y: hidden;
+}
+/*設定 checkbox+label 位置和滑鼠觸及反應*/
+input[type="checkbox"] + label{
+    padding-left: 4px;
+    cursor: pointer;
+/*換行縮排的排版設定*/
+    display: block;
+    padding-left: 29px;
+    text-indent: -25px;
+}
+/*隱藏預設的 checkbox */
+input[type="checkbox"]{
+  display: none;
+  
+}
+/*利用虛擬元素畫出我要的 checkbox */
+input[type="checkbox"]+label::before{
+    /*打勾符號代碼*/
+    content:"\2713";
+    display: inline-block;
+    color: transparent;
+    border:1px solid #000;
+    border-radius: 16%;
+    width:16px;
+    height:16px;
+    margin-right: 8px;
+/*  檢查位置*/
+/*  text-decoration: underline; */
+    font-size: 16px;
+    line-height: 0.667; /*  用 line-height 來調整符號的縱向位置*/ /*預設lh=16*1.5=24 所以要修正1/1.5回去 */
+    text-indent: 1px; /*  校正 pseudoelement 縮排*/
+    vertical-align: 2px;
+}
+
+/*  檢查位置*/
+/* .checkbox-label{
+    text-decoration: underline;
+} */
+/*在 id for 已掛勾的前提下，畫出 check 之後的樣子*/
+input[type="checkbox"]:checked+label::before{
+    background-color: #AA0601;
+    border-color: #AA0601;
+    color: white;
+}
+
+@include pad {
+    input[type="checkbox"]+label::before{
+        /*  iPhone XR*/
+        /*  用 PC 看的話下面的修正可以不要*/
+       font-size: 12px;
+       padding-top: 2px;
+       vertical-align: 2px;
+       text-indent: 3px;
+      }
+}
+
+// card
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card-img-top{
+    width: 100%;
+    max-height: 306px;
+    object-fit: fill;
+}
+.card-body{
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #DEE2E6;
+    border-top: 0 ;
+    box-shadow: 0px 2px 6px #00000029;
+
+    padding: 16px;
+}
+.card-title{
+    font-weight: 500;
+}
+.card-text{
+    font-weight: 400;
+    height: 120px;
+
+    padding-top: 8px;
+}
+.card-small{
+    font-size: 0.875*$font-size-default;
+    color: $gray-500;
+}
+
+// drop-down

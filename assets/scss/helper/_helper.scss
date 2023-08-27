@@ -1,0 +1,22 @@
+.m0-a{
+    margin: 0 auto;
+}
+
+.bs-emphasize-8px{
+    border-left: 8px solid $emphasize;
+}
+.b-1-gray-200{
+    border: 1px solid $gray-200;
+}
+.bb-8-primary{
+    border-bottom: 8px solid $primary;
+}
+.tag:hover{
+    background: $secondary;
+}
+
+.square-24px-br-4px{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}

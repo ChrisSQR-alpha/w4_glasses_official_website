@@ -1,0 +1,303 @@
+$limit: 10;
+
+@for $i from 0 through $limit{
+    // margin-pc
+    .m-#{$i}{
+        margin: $i*0.5*$spacing;
+    }
+    .mt-#{$i}{
+        margin-top: $i*0.5*$spacing;
+    }
+    .me-#{$i}{
+        margin-right: $i*0.5*$spacing;
+    }
+    .mb-#{$i}{
+        margin-bottom: $i*0.5*$spacing;
+    }
+    .ms-#{$i}{
+        margin-left: $i*0.5*$spacing;
+    }
+    .mx-#{$i}{
+        margin-right: $i*0.5*$spacing;
+        margin-left: $i*0.5*$spacing;
+    }
+    .my-#{$i}{
+        margin-top: $i*0.5*$spacing;
+        margin-bottom: $i*0.5*$spacing;
+    }
+    .m-n-#{$i}{
+        margin: $i*(-0.5)*$spacing;
+    }
+    .mt-n-#{$i}{
+        margin-top: $i*(-0.5)*$spacing;
+    }
+    .me-n-#{$i}{
+        margin-right: $i*(-0.5)*$spacing;
+    }
+    .mb-n-#{$i}{
+        margin-bottom: $i*(-0.5)*$spacing;
+    }
+    .ms-n-#{$i}{
+        margin-left: $i*(-0.5)*$spacing;
+    }
+    .mx-n-#{$i}{
+        margin-right: $i*(-0.5)*$spacing;
+        margin-left: $i*(-0.5)*$spacing;
+    }
+    .my-n-#{$i}{
+        margin-top: $i*(-0.5)*$spacing;
+        margin-bottom: $i*(-0.5)*$spacing;
+    }
+}
+.mx-n-12px{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+@for $i from 0 through $limit{
+     // margin-pad
+    .m-md-#{$i}{
+        @include pad{
+            margin: $i*0.5*$spacing;
+        }
+    }
+    .mt-md-#{$i}{
+        @include pad{
+            margin-top: $i*0.5*$spacing;
+        }
+    }
+    .me-md-#{$i}{
+        @include pad{
+            margin-right: $i*0.5*$spacing;
+        }
+    }
+    .mb-md-#{$i}{
+        @include pad{
+            margin-bottom: $i*0.5*$spacing;
+        }
+    }
+    .ms-md-#{$i}{
+        @include pad{
+            margin-left: $i*0.5*$spacing;
+        }
+    }
+    .mx-md-#{$i}{
+        @include pad{
+            margin-left: $i*0.5*$spacing;
+            margin-right: $i*0.5*$spacing;
+        }
+        
+    }
+    .my-md-#{$i}{
+        @include pad{
+            margin-top: $i*0.5*$spacing;
+            margin-bottom: $i*0.5*$spacing;
+        }
+        
+    }
+}
+@for $i from 0 through $limit{
+    // margin-mobile
+    .m-sm-#{$i}{
+        @include mobile{
+            margin: $i*0.5*$spacing;
+        }
+    }
+    .mt-sm-#{$i}{
+        @include mobile{
+            margin-top: $i*0.5*$spacing;
+        }
+    }
+    .me-sm-#{$i}{
+        @include mobile{
+            margin-right: $i*0.5*$spacing;
+        }
+    }
+    .mb-sm-#{$i}{
+        @include mobile{
+            margin-bottom: $i*0.5*$spacing;
+        }
+    }
+    .mx-sm-#{$i}{
+        @include mobile{
+            margin-right: $i*0.5*$spacing;
+            margin-left: $i*0.5*$spacing;
+        }
+
+    }
+    .my-sm-#{$i}{
+        @include mobile{
+            margin-top: $i*0.5*$spacing;
+            margin-bottom: $i*0.5*$spacing;
+        }
+    }
+}
+//補充 m sm class
+.ms-sm-n-4px{
+    @include mobile{
+        padding-left: -4px;
+    }
+}
+
+.me-sm-n-4px{
+    @include mobile{
+        padding-right: -4px;
+    }
+}
+
+.mx-sm-n-12px{
+    @include mobile{
+        padding-left: -12px;
+    }
+}
+
+
+@for $i from 0 through $limit{
+    // padding-pc
+    .p-#{$i}{
+        padding: $i*0.5*$spacing;
+    }
+    .pt-#{$i}{
+        padding-top: $i*0.5*$spacing;
+    }
+    .pe-#{$i}{
+        padding-right: $i*0.5*$spacing;
+    }
+    .pb-#{$i}{
+        padding-bottom: $i*0.5*$spacing;
+    }
+    .ps-#{$i}{
+        padding-left: $i*0.5*$spacing;
+    }
+    .px-#{$i}{
+            padding-right: $i*0.5*$spacing;
+            padding-left: $i*0.5*$spacing;
+    }
+    .py-#{$i}{
+        padding-top: $i*0.5*$spacing;
+        padding-bottom: $i*0.5*$spacing;
+    }
+}
+//補充 p pc class
+.py-3d5px{
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+}
+.py-5px{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.py-7px{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.px-12px{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.px-sm-4px{
+    @include mobile{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+ }
+.ms-12px{
+    margin-left: 12px;
+}
+.me-12px{
+    margin-right: 12px;
+}
+.ms-n-12px{
+    margin-left: -12px;
+}
+.me-n-12px{
+    margin-right: -12px;
+}
+@for $i from 0 through $limit{
+    // padding-pad
+    .p-md-#{$i}{
+        @include pad{
+            padding: $i*0.5*$spacing;
+        }
+    }
+    .pt-md-#{$i}{
+        @include pad{
+            padding-top: $i*0.5*$spacing;
+        }
+    }
+    .pe-md-#{$i}{
+        @include pad{
+            padding-right: $i*0.5*$spacing;
+        }
+    }
+    .pb-md-#{$i}{
+        @include pad{
+            padding-bottom: $i*0.5*$spacing;
+        }
+    }
+    .ps-md-#{$i}{
+        @include pad{
+            padding-left: $i*0.5*$spacing;
+        }
+    }
+    .px-md-#{$i}{
+        @include pad{
+            padding-left: $i*0.5*$spacing;
+            padding-right: $i*0.5*$spacing;
+        }
+    }
+    .py-md-#{$i}{
+        @include pad{
+            padding-top: $i*0.5*$spacing;
+            padding-bottom: $i*0.5*$spacing;
+        }
+    }
+}
+//補充 p-md class
+.px-md-36px{
+    @include pad{
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+
+@for $i from 0 through $limit{
+    // padding-mobile
+    .p-sm-#{$i}{
+        @include mobile{
+            padding: $i*0.5*$spacing;
+        }
+    }
+    .pt-sm-#{$i}{
+        @include mobile{
+            padding-top: $i*0.5*$spacing;
+        }
+    }
+    .pe-sm-#{$i}{
+        @include mobile{
+            padding-right: $i*0.5*$spacing;
+        }
+    }
+    .pb-sm-#{$i}{
+        @include mobile{
+            padding-bottom: $i*0.5*$spacing;
+        }
+    }
+    .ps-sm-#{$i}{
+        @include mobile{
+            padding-left: $i*0.5*$spacing;
+        } 
+    }
+    .px-sm-#{$i}{
+        @include mobile{
+            padding-right: $i*0.5*$spacing;
+            padding-left: $i*0.5*$spacing;
+        }
+    }
+    .py-sm-#{$i}{
+        @include mobile{
+             padding-top: $i*0.5*$spacing;
+             padding-bottom: $i*0.5*$spacing;
+        }
+    }
+} 

@@ -1,4 +1,32 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+//footer
+
+.social-ic{
+    max-width: 3*$spacing;
+    @include pad{
+      max-width: 2.5*$spacing;;
+    }
+    @include mobile{
+      max-width: 1.5*$spacing;
+    }
+}
+
+.footer-menu{
+  @include mobile{
+    display: none;
+  }
+}
+
+.phone,
+.mail{
+  width: 48px;
+  height: 48px;
+  vertical-align: -9px;
+  margin-bottom: -9px;
+  text-align: center;
+  @include mobile{
+    width: 24px;
+    height: 24px;
+    vertical-align: -4px;
+    margin-bottom: -4px;
+  }
 }

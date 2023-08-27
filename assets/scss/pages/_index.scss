@@ -1,3 +1,63 @@
-.index-title {
-  font-size: 100px;
+
+.hero-header{
+    background: url(../images/home-header.png) no-repeat center/cover;
+    height: 787px;
+    @include mobile{
+        background: url(../images/home-header-sm.png) no-repeat center/cover;
+        height: 396px;
+    }
+}
+
+.py-md-36px{
+    @include pad{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+
+.feature{
+    margin: 0 -12px;
+    max-width: 1296px;
+}
+
+.feature-list{
+    padding: 0 12px;
+    width: 25.46%;
+}
+
+.feature-icon{
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+@media(max-width: 970px){
+    .col-970-12{
+        width: calc(12/$column-number)*100%;
+        padding: 0 calc($gutter-width/2);
+    }
+    .maw-md-416px{
+        max-width: 416px;
+    }
+
+}
+@include pad{
+    .maw-sm-438px{
+        max-width: 348px;
+    }
+}
+
+
+.co-brand{
+    background: url("../images/index-bg.png") no-repeat center/cover;
+}
+@include pad{
+    .co-brand-md{
+        background: url("../images/index-bg-md.png") no-repeat center/cover;
+    }
+}
+@include mobile{
+    .co-brand-sm{
+        background: url("../images/index-bg-sm.png") no-repeat center/cover;
+    }
 }

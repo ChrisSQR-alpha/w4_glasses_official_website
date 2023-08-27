@@ -1,0 +1,43 @@
+// 設定 color 變數
+
+$primary: #AA0601;
+$secondary: #FBF2F2;
+$emphasize: #9F1213;
+
+$success: #495057;
+$danger: #5F3E2D;
+$warning: #B75929;
+$info: #650300;
+$light: #ffffff;
+$dark: #000000;
+
+$opaque-20: #00000020;
+$opaque-29: #00000029;
+
+$gray-100: #F2F2F2;
+$gray-200: #DCDCDC;
+$gray-300: #DEE2E6;
+$gray-400: #CED4DA;
+$gray-500: #707070;
+$gray-600: #555555;
+$gray-700: #212529;
+
+// 設定 spacing 單位
+$spacing: 16px;
+
+// 設定預設 font-size
+$font-size-default: 16px;
+
+// 設定預設中英文字型
+$font-en: 'Roboto', sans-serif;
+$font-zh: 'Noto Sans', sans-serif;
+
+// 設定斷點
+$pc: 1296px;
+$pad: 768px;
+$mobile: 375px;
+
+// 設定網格變數
+$gutter-width: 24px;
+$column-number: 12;
+
